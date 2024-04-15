@@ -7,8 +7,8 @@ const Layout = ({children}) => {
     <>
     <header className={Style.header}>
         <Link href="/">
-        <h2>Mobina Designs</h2>
-        <p>choose your favorite Cloth</p>
+        <h2>Javad Cars</h2>
+        <p>choose your favorite car</p>
         </Link>
     </header>
     <div className={Style.container}>

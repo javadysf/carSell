@@ -1,8 +1,10 @@
+import Link from "next/link";
 import Styles from "./CarCards.module.css";
 import Location from "../icons/Location";
 
 const CarCard = (props) => {
   return (
+    <Link href={`/cars/${props.id}`}>
     <div className={Styles.container}>
       <img className={Styles.image} src={props.image} />
       <h4 className={Styles.title}>{`${props.name} ${props.model}`}</h4>
@@ -16,6 +18,7 @@ const CarCard = (props) => {
         </div>
       </div>
     </div>
+    </Link>
   );
 };
 
